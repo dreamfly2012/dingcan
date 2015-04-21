@@ -1,0 +1,294 @@
+*, body, ul, li {
+    margin: 0px;
+    padding: 0px;
+    font-family: '微软雅黑'
+}
+
+body{
+    min-height: 800px;
+    padding-top: 40px;
+}
+
+a{
+    color:#000000;
+}
+a:hover{
+    color:#000000;
+}
+
+img {
+    border: 0px;
+    max-width: 100%;
+}
+
+
+.carousel-inner img{
+    width:100%;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs15{
+    font-size: 15px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.mb5{
+    margin-bottom: 5px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.mb25{
+    margin-bottom: 25px;
+}
+
+.mb30{
+    margin-bottom: 30px;
+}
+
+.mt5{
+    margin-top: 5px;
+}
+
+.mt10{
+    margin-top: 10px;
+}
+
+.mt15{
+    margin-top: 15px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+.mt25{
+    margin-top: 25px;
+}
+.mt30{
+    margin-top: 30px;
+}
+.mt40{
+    margin-top: 40px;
+}
+.mt50{
+    margin-top: 50px;
+}
+.mt55{
+    margin-top: 55px;
+}
+.ml5{
+    margin-left: 5px;
+}
+.ml10{
+    margin-left: 10px;
+}
+.ml15{
+    margin-left: 15px;
+}
+.ml20{
+    margin-left: 20px;
+}
+.mr5{
+    margin-right: 5px;
+}
+.mr10{
+    margin-right: 10px;
+}
+.mr15{
+    margin-right: 15px;
+}
+.mr20{
+    margin-right: 20px;
+}
+.mr25{
+    margin-right: 25px;
+}
+.pt5{
+    padding-top: 5px;
+}
+
+.pt10{
+    padding-top: 10px;
+}
+
+.pt15 {
+    padding-top: 15px;
+}
+
+.pt20{
+    padding-top: 20px;
+}
+
+.pt25{
+    padding-top: 25px;
+}
+
+.pt30{
+    padding-top: 30px;
+}
+.pt40{
+    padding-top: 40px;
+}
+.pt50 {
+    padding-top: 50px;
+}
+.pb5{
+    padding-bottom: 5px;
+}
+
+.pb10{
+    padding-bottom: 10px;
+}
+
+.pb15 {
+    padding-bottom: 15px;
+}
+
+.pb20 {
+    padding-bottom: 20px;
+}
+
+.pb25{
+    padding-bottom: 25px;
+}
+
+.pl5{
+    padding-left: 5px;
+}
+.pl10{
+    padding-left: 10px;
+}
+.pl15{
+    padding-left: 15px;
+}
+.pl20{
+    padding-left: 20px;
+}
+.pl25{
+    padding-left: 25px;
+}
+.pl30{
+    padding-left: 30px;
+}
+.pl35{
+    padding-left: 35px;
+}
+.pl40{
+    padding-left: 40px;
+}
+.pr5{
+    padding-right: 5px;
+}
+.pr10{
+    padding-right: 10px;
+}
+.pr15{
+    padding-right: 15px;
+}
+.pr20{
+    padding-right: 20px;
+}
+.pr25{
+    padding-right: 25px;
+}
+
+.width40 {
+    width: 40%;
+}
+
+.width60 {
+    width: 60%;
+}
+
+.width80 {
+    width: 80%;
+}
+.height180{
+    height: 180px;
+}
+
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.inline{
+    display: inline;
+}
+.list-no-style{
+    list-style: none;
+}
+.list-inline{
+    list-style: none;
+}
+.list-inline li{
+    display: inline;
+}
+.white{
+    color: white;
+}
+.grey{
+    color:#ccc;
+}
+
+/** 首页样式 **/
+.goods-footer{
+    height: 100px;
+    background-color: #CCC;
+    padding-top: 15px;
+}
+
+.goods-footer a{
+    color:#000;
+}
+
+
+/**商品详情页**/
+
+.gallery-jumb a{
+    float: left;
+}
+
+.cart-input{
+    text-align: center;
+    width: 30px;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+#back-to-top{
+    position:fixed;
+    display:none;
+    bottom:100px;
+    right:80px;
+}
+
+#back-to-top a{
+    text-align:center;
+    text-decoration:none;
+    color:#d1d1d1;
+    display:block;
+    width:70px;
+    /*使用CSS3中的transition属性给跳转链接中的文字添加渐变效果*/
+    -moz-transition:color 1s;
+    -webkit-transition:color 1s;
+    -o-transition:color 1s;
+}
+#back-to-top a:hover{
+    color:#979797;
+}

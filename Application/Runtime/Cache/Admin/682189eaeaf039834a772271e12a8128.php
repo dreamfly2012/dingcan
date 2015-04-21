@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>非法的参数参数链接！

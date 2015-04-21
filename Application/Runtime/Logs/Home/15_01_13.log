@@ -1,0 +1,1521 @@
+[ 2015-01-13T14:34:49+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001582s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.154567s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.057593s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.026559s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000658s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.012486s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000714s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000177s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000341s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 130 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 320 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 320 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 320 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 320 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.126423s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.126586s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009018s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009175s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001563s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001719s ]
+
+[ 2015-01-13T14:41:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000912s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001066s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006261s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005058s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000834s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000730s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000788s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.001474s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.001684s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 130 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 277 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 277 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 277 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 277 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032367s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001013s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2015-01-13T15:00:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001017s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001032s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001274s ]
+
+[ 2015-01-13T15:01:25+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001353s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006505s ]
+
+[ 2015-01-13T15:02:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000691s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000939s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.008342s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007124s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006763s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.007764s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000693s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000809s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000606s ]
+ERR: Think\Model:getAllGoodsByStoreId方法不存在！
+
+[ 2015-01-13T15:02:35+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000811s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000984s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005268s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007037s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006324s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000510s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000614s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000587s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000717s ]
+ERR: Think\Model:getAllGoodsByStoreId方法不存在！
+
+[ 2015-01-13T15:03:12+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001644s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001043s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005576s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.009854s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005639s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.001103s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000732s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000833s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000619s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.001590s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000622s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000178s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+
+[ 2015-01-13T15:25:14+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000990s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007057s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.009182s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.007192s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.002095s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000878s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000654s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000731s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.001762s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000726s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000179s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000354s ]
+
+[ 2015-01-13T15:43:42+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000567s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000896s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001061s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005369s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.011278s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006132s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000684s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.001131s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000907s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000883s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.004280s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000709s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000181s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000358s ]
+
+[ 2015-01-13T15:44:08+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001187s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005159s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007374s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005005s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000488s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000965s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000946s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.002771s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002933s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000563s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000175s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000333s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 130 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035250s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002472s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002633s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001241s ]
+
+[ 2015-01-13T15:44:28+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000608s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000846s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001008s ]
+ERR: 无法加载控制器:Goods
+
+[ 2015-01-13T15:45:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000806s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000971s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000239s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000425s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019042s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019215s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000855s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001009s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000819s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000964s ]
+
+[ 2015-01-13T15:46:32+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001074s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001264s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000302s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022855s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023017s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000483s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000653s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001100s ]
+
+[ 2015-01-13T15:56:35+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000790s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000946s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000310s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000483s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035693s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035855s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000588s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000811s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000955s ]
+
+[ 2015-01-13T15:56:35+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.jpanelmenu.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000626s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000898s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000449s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032621s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032774s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000742s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000883s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001021s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.plugins.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.121023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.121179s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000782s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000921s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001086s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000589s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001206s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001380s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.042707s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042859s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000710s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000823s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000960s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.showbizpro.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001476s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000315s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000784s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034538s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000791s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000833s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000967s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.magnific-popup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000615s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001259s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000432s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035080s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000752s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000942s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000913s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001054s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/hoverIntent.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000582s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001596s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002219s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048203s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000676s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000813s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000928s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001072s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/superfish.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000947s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.009266s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.009459s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.046903s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047051s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000739s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000836s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000969s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.pureparallax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001151s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000815s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002207s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.059703s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059852s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013405s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013560s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004078s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004232s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.pricefilter.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000592s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000452s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034321s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000723s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000880s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001019s ]
+
+[ 2015-01-13T15:56:36+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.selectric.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000584s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000889s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000285s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000433s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034793s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000819s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000959s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001342s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.royalslider.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001930s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002102s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.002786s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002989s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.431829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.431984s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000642s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000776s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000863s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001003s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/SelectBox.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000625s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001183s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000341s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.097427s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.097693s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001261s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001412s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001281s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001528s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/modernizr.custom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000660s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001162s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000434s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.039691s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039853s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000700s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000871s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001007s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001409s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000309s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000467s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034976s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001008s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000930s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001068s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.flexslider-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002928s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000981s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000287s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000459s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033866s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034048s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000666s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000861s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000994s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000955s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001138s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001285s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000299s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000457s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036861s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.037010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000824s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000975s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.tooltips.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003067s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000961s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001123s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000274s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033015s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033162s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000713s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000864s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001269s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001423s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.isotope.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000976s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001730s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002112s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000321s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000608s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033514s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000672s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000824s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001228s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001385s ]
+
+[ 2015-01-13T15:56:37+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/puregrid.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000636s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000312s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000645s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001103s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001574s ]
+
+[ 2015-01-13T15:56:38+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/stacktable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000689s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005948s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006610s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000294s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000478s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035172s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001079s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001226s ]
+
+[ 2015-01-13T15:56:38+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/custom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006182s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.008772s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009027s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041237s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000616s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000747s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002626s ]
+
+[ 2015-01-13T15:56:38+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/switcher.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006460s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000301s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000615s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000746s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000855s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000990s ]
+
+[ 2015-01-13T15:59:17+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/24.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001039s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000438s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.048080s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048238s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000586s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000725s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000838s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2015-01-13T15:59:17+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.jpanelmenu.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000561s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000891s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002262s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032029s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032176s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000704s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001008s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2015-01-13T15:59:17+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.revolution.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000868s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001818s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000292s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000490s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060365s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060522s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000715s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000788s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000925s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.plugins.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.013447s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002146s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002328s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000436s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.034566s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.034723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000584s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000793s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000931s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.themepunch.showbizpro.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000560s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002310s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.056220s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.056375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000798s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000814s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000950s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/hoverIntent.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000864s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001020s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.052172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001122s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001262s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003684s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.magnific-popup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000573s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000743s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000898s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000447s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033210s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033361s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000562s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000696s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000807s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000941s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/superfish.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001493s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001983s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002149s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000297s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035037s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035191s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000596s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000732s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000879s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001018s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.pureparallax.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000614s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000866s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000288s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000439s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032823s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032969s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000602s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000735s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000846s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000984s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.pricefilter.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000851s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001041s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000675s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.064872s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069166s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001157s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000940s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001085s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.counterup.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000579s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000847s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000335s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040171s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001544s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001692s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002226s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002377s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.selectric.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000813s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000961s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000278s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000443s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.067172s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.067320s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000968s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000911s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001050s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/stacktable.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000585s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000720s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000875s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.035473s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035627s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000601s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000741s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000874s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.royalslider.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001150s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001233s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001405s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001055s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001233s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.130073s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.130269s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.010831s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.011220s ]
+INFO: [ app_end ] --END-- [ RunTime:0.011379s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.tooltips.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000701s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001088s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000284s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000446s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.066618s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066765s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000662s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003796s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003951s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/SelectBox.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000606s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000933s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001106s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000293s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000454s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032144s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032295s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000617s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000984s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001134s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/custom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000545s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.010771s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010954s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000305s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.041036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041192s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003404s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003559s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.009425s ]
+INFO: [ app_end ] --END-- [ RunTime:0.009587s ]
+
+[ 2015-01-13T15:59:18+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/waypoints.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000583s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001152s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000440s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032748s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032911s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000587s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000989s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2015-01-13T15:59:19+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/modernizr.custom.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001263s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001776s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000279s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000445s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.040762s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040947s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000599s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000860s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001031s ]
+
+[ 2015-01-13T15:59:19+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.isotope.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.040720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004017s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004191s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000276s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000435s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.036701s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036851s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000782s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000916s ]
+
+[ 2015-01-13T15:59:19+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/switcher.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000552s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000728s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001034s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000273s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000430s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057420s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057581s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001120s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001292s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001026s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001175s ]
+
+[ 2015-01-13T15:59:19+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/jquery.flexslider-min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000607s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001101s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000275s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000431s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.038191s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.038349s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000716s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000905s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001045s ]
+
+[ 2015-01-13T15:59:19+08:00 ] 127.0.0.1 /Home/Goods/goods_detail/goods_id/scripts/puregrid.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000547s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000803s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000948s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000354s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000506s ]
+NOTIC: [8] Undefined variable: desktop_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 125 行.
+NOTIC: [8] Undefined variable: mobile_nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 141 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031875s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032031s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000520s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000648s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000943s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001082s ]
+
+[ 2015-01-13T17:17:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001137s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001271s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001437s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.028072s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.072759s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.050928s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.012885s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000834s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.012608s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.013913s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.014609s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000647s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000171s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 130 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined index: goods_price D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 248 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+NOTIC: [8] Undefined variable: default_brand_logo D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 278 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.189757s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.189906s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.016530s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.016688s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001871s ]
+
+[ 2015-01-13T17:18:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000682s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003758s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003943s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007183s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007452s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005198s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000499s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000670s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.000640s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000817s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.001654s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000650s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000158s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000328s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033722s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033880s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000590s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000731s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000876s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001016s ]
+
+[ 2015-01-13T17:18:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000637s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000838s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001535s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005298s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.006472s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005904s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 1  [ RunTime:0.000500s ]
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('13','14','15','12')  [ RunTime:0.000781s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.002103s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000679s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.001803s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000595s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000157s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000419s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 131 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 125 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 126 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 126 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 127 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 128 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\983f572076e3a0909bb7d9a7c3e06cc9.php 第 130 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.032146s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032305s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000592s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000737s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000969s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001125s ]
+

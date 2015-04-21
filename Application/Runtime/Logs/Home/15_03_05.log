@@ -1,0 +1,1586 @@
+[ 2015-03-05T15:28:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.018001s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.032002s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.020001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007001s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\IndexController.class.php 第 16 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.018001s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.011000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.005001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 32 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.005000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.013000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.369021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.371021s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.020001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.022002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2015-03-05T15:28:15+08:00 ] 127.0.0.1 /Home/Goods/goodsDetail/goods_id/5.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.006000s ]
+SQL: SHOW COLUMNS FROM `js_goods_gallery` [ RunTime:0.026001s ]
+SQL: SELECT * FROM `js_goods` WHERE `goods_id` = 5 LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_goods_gallery` WHERE `goods_id` = 5  [ RunTime:0.006001s ]
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.167009s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.169009s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-03-05T15:28:41+08:00 ] 127.0.0.1 /Home/Goods/goodsDetail/goods_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `js_goods_gallery` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_goods` WHERE `goods_id` = 3 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_goods_gallery` WHERE `goods_id` = 3  [ RunTime:0.008001s ]
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8] Undefined variable: nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 128 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.117007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.119007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-03-05T15:47:47+08:00 ] 127.0.0.1 /Home/Goods/goodsDetail/goods_id/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `js_goods_gallery` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_goods` WHERE `goods_id` = 3 LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_goods_gallery` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = 3  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8] Undefined variable: nav D:\jusou_shop\Application\Runtime\Cache\Home\d24b9c92f9d923a06ae113dfcdf269a0.php 第 132 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.129007s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.131007s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.006000s ]
+
+[ 2015-03-05T16:07:17+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002000s ]
+NOTIC: [8] Undefined variable: c D:\jusou_shop\Application\Home\Controller\GoodsController.class.php 第 20 行.
+
+[ 2015-03-05T16:08:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001001s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005001s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.006001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.440025s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.442025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.009001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2015-03-05T16:13:06+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.186011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.188011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007001s ]
+
+[ 2015-03-05T16:16:47+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.007000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.004001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.005000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-03-05T16:22:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.005001s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.002001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.184010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2015-03-05T16:26:28+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.009000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.004001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.004000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.004001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.277016s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.280016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-03-05T16:26:53+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.003000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.007000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.004001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.003000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.007001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.017000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.006000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.003000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.003000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.004000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.198012s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.201012s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003001s ]
+
+[ 2015-03-05T16:29:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.007000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.185010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-03-05T16:29:40+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.005000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.009000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.006001s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.002001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.199011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2015-03-05T16:31:11+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.007000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008000s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.002001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.004001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.184010s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.186010s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.007000s ]
+
+[ 2015-03-05T16:34:09+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.004000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.007000s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.008001s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.003000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002001s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.196011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.198011s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008001s ]
+
+[ 2015-03-05T17:23:10+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.073004s ]
+SQL: SELECT `brand_id` FROM `js_brand` WHERE `store_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\jusou_shop\Application\Home\Controller\BrandController.class.php 第 10 行.
+SQL: SELECT * FROM `js_brand` WHERE `brand_id` IN ('')  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_goods` [ RunTime:0.034002s ]
+SQL: SHOW COLUMNS FROM `js_category` [ RunTime:0.024002s ]
+SQL: SELECT * FROM `js_goods` WHERE `store_id` = 3 AND `is_delete` = 0  [ RunTime:0.003001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 1  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 4  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 3  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 5  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 6  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 33  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 34  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 35  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 36  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 11  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 23  [ RunTime:0.002001s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 24  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 25  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.002000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 26  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 27  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 28  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 29  [ RunTime:0.001000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.001000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 30  [ RunTime:0.000000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 31  [ RunTime:0.002000s ]
+NOTIC: [2] Missing argument 1 for Home\Model\CategoryModel::getCatNameById(), called in D:\jusou_shop\Application\Home\Controller\GoodsController.class.php on line 21 and defined D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 13 行.
+NOTIC: [8] Undefined variable: id D:\jusou_shop\Application\Home\Model\CategoryModel.class.php 第 14 行.
+SQL: SELECT `cat_name` FROM `js_category` WHERE `id` = null  [ RunTime:0.000000s ]
+SQL: SELECT `market_price`,`shop_price`,`promote_price`,`is_promote` FROM `js_goods` WHERE `goods_id` = 32  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 0  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 2  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 3  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 6  [ RunTime:0.004000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 10  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 4  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 5  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 7  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 8  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 9  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 11  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 12  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 14  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 15  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `js_nav` WHERE `parent_id` = 18  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.003000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.308017s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.310018s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.009000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.011000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+

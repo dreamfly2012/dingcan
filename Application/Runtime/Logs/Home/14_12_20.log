@@ -1,0 +1,48 @@
+[ 2014-12-20T10:56:21+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000576s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000801s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000953s ]
+SQL: SHOW COLUMNS FROM `js_nav` [ RunTime:0.005750s ]
+SQL: SHOW COLUMNS FROM `js_brand` [ RunTime:0.004949s ]
+NOTIC: [2] Missing argument 1 for Home\Model\BrandModel::getBrandInfo(), called in D:\jusou_shop\Application\Home\Controller\IndexController.class.php on line 11 and defined D:\jusou_shop\Application\Home\Model\BrandModel.class.php 第 14 行.
+NOTIC: [8] Undefined variable: store_id D:\jusou_shop\Application\Home\Model\BrandModel.class.php 第 15 行.
+SQL: SELECT * FROM `js_brand` WHERE `store_id` = null  [ RunTime:0.000348s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 0  [ RunTime:0.041512s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'mobile' AND `parent_id` = 0  [ RunTime:0.000486s ]
+SQL: SELECT * FROM `js_nav` WHERE `type` = 'desktop' AND `parent_id` = 2  [ RunTime:0.000425s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000360s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000555s ]
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Undefined index: children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 127 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant navigator - assumed 'navigator' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Use of undefined constant has_children - assumed 'has_children' D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 121 行.
+NOTIC: [8] Undefined index: url D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 122 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 122 行.
+NOTIC: [8] Undefined index: name D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 123 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 124 行.
+NOTIC: [8] Undefined index: has_children D:\jusou_shop\Application\Runtime\Cache\Home\2a94b8bda04ff446dcedd42276fc99ee.php 第 126 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.175448s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.175636s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001007s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001209s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001041s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001212s ]
+

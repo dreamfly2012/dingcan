@@ -1,0 +1,1 @@
+<?php if (!defined('THINK_PATH')) exit();?>此链接已经过期！
