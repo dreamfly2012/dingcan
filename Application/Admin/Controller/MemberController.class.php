@@ -66,7 +66,7 @@ class MemberController extends CommonController
 
     public function searchUser()
     {
-        $u = D('Users');
+        $u = D('User');
         $user_name = I('post.user_name');
         $email = I('post.email');
         $id = $u->getUserIdByEmailOrName($email, $user_name);
@@ -79,7 +79,7 @@ class MemberController extends CommonController
 
     public function showAddMember($id)
     {
-        $u = D('Users');
+        $u = D('User');
         $smr = D('StoreMemberRank');
         $rank_info = $smr->getAllInfo();
         $user = $u->getInfoById($id);
@@ -130,7 +130,7 @@ class MemberController extends CommonController
         if (empty($order)) {
             $list = $sm->where(array('store_id' => $store_id, 'is_active' => 0))->order('user_id')->limit($Page->firstRow . ',' . $Page->listRows)->select();
             $smr = D('StoreMemberRank');
-            $u = D('Users');
+            $u = D('User');
             foreach ($list as $k => $v) {
                 $list[$k]['user_info'] = $u->getInfoById($v['user_id']);
                 $list[$k]['rank_info'] = $smr->getInfoById($v['rank']);
@@ -138,12 +138,14 @@ class MemberController extends CommonController
         } else {
             $list = $sm->where(array('store_id' => $store_id, 'is_active' => 0))->order($order)->limit($Page->firstRow . ',' . $Page->listRows)->select();
             $smr = D('StoreMemberRank');
-            $u = D('Users');
+            $u = D('User');
             foreach ($list as $k => $v) {
                 $list[$k]['user_info'] = $u->getInfoById($v['user_id']);
                 $list[$k]['rank_info'] = $smr->getInfoById($v['rank']);
             }
         }
+
+        dump($list);
 
         $this->assign('list', $list);// 赋值数据集
         $this->assign('page', $show);// 赋值分页输出
@@ -157,7 +159,7 @@ class MemberController extends CommonController
     {
         $sm = D('StoreMember');
         $smr = D('StoreMemberRank');
-        $u = D('Users');
+        $u = D('User');
         $store_id = session('store_id');
         $id = I('request.id');
         $member_info = $sm->getInfoById($id);

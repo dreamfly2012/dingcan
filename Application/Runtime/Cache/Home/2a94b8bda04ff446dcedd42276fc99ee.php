@@ -10,6 +10,7 @@
     <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap-responsive.css" rel="stylesheet">
     <script src="http://cdn.bootcss.com/jquery/1.11.0/jquery.min.js"></script>
     <script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="http://cdn.bootcss.com/holder/2.6.0/holder.min.js"></script>
     <script type="text/javascript">
 	//购物车URL
 	var __ADD_TO_AJAX_CART_URL__ = "<?php echo U('Cart/addToAjaxCart');?>";

@@ -76,11 +76,15 @@ http://store.jusou8.com/index.php?m=Admin&c=Index
 TODO:
 
 //添加兑换券充值功能.
-注册，登录
+注册，登录,个人中心
 
 修改数据库
 
-js_comment 表 id_value => goods_id
+js_comment 表 id_value => goods_id 添加列is_show default 1  finished
+
+添加js_coupon 表 finished
+
+
 
 
 

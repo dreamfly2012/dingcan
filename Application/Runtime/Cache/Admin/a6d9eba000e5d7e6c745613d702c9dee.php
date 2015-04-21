@@ -29,7 +29,7 @@
 
             <a class="navbar-brand" href="#">巨搜Shop</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Goods/goodsList');?>">商品管理</a></li>
                 <li><a href="<?php echo U('Brand/brandList');?>">品牌管理</a></li>
@@ -38,8 +38,9 @@
                 <li><a href="<?php echo U('Ad/adList');?>">广告管理</a></li>
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
-                <li><a href="<?php echo U('User/userList');?>">会员管理</a></li>
-                <li><a href="<?php echo U('Store/storeSetting');?>">商店设置</a></li>
+                <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
+                <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
                
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -54,14 +55,14 @@
 
 
 
-<div class="left">
+<div class="left_content">
     <ul class="list-group black">
         <li class="list-group-item"><a href="<?php echo U('Ad/adAdd');?>">添加广告</a></li>
         <li class="list-group-item"><a href="<?php echo U('Ad/adList');?>">广告列表</a></li>
     </ul>
 </div>
 
-<div class="right">
+<div class="right_content">
     <div class="container">
         <h2>广告添加</h2>
         <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Ad/addAd');?>" method="post" class="form" role="form">

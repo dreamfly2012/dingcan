@@ -12,7 +12,7 @@ class SearchController extends CommonController{
 		$this->assign('goods_list',$goods_list);
 
 		//调用Nav控制器的赋值导航方法
-		R('Nav/assignNav',array($store_id));
+		R('Nav/assignNav',array($this->store_id));
 		$this->display('Goods/goods_list');
 	}
 }

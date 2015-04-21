@@ -68,28 +68,28 @@
         <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Comment/addComment');?>" method="post" class="form" role="form">
             <div class="form-group">
     <label>评论人：</label>
-    <span><?php echo ($comment["user_name"]); ?></span>
+    <span><input type="text" name="user_name" value="<?php echo ($comment["user_name"]); ?>" class="form-control" /></span>
 </div>
 
 <div class="form-group">
     <label>评论商品：</label>
     <select name="goods_id" id="goods_id" class="form-control">
-        <?php if(is_array($goods_list)): foreach($goods_list as $key=>$goods): ?><option value="<?php echo ($goods["goods_id"]); ?>" <?php if($goods["goods_id"] == $comment['goods_id']): ?>selected='selected'<?php endif; ?>>
+        <?php if(is_array($goods_list)): foreach($goods_list as $key=>$goods): ?><option value="<?php echo ($goods["goods_id"]); ?>" <?php if($goods['goods_id'] == $comment['goods_id']): ?>selected='selected'<?php endif; ?>>
                 <?php echo ($goods["goods_name"]); ?>
             </option><?php endforeach; endif; ?>
     </select>
-    <a href="<?php echo U('Home/Goods/goodsDetail',array('goods_id'=>$comment['goods_id']));?>"><?php echo (getgoodsnamebyid($comment["goods_id"])); ?></a>
+    <a href="<?php echo U('Home/Goods/goodsDetail',array('goods_id'=>$comment['goods_id']));?>" target="_blank"><?php echo (getgoodsnamebyid($comment["goods_id"])); ?></a>
 </div>
 
 <div class="form-group">
     <label for="content">评论内容：</label>
-    <textarea name="content" class="form-control"><?php echo ($comment["content"]); ?></textarea>
+    <textarea name="content" id="content" class="form-control"><?php echo ($comment["content"]); ?></textarea>
 </div>
 
 <div class="form-group">
-    <label for="comment_rank">评论等级：</label>
+    <label for="comment_rank">评论分数：</label>
     <select name="comment_rank" id="comment_rank" class="form-control">
-        <?php if(is_array($comment_ranks)): foreach($comment_ranks as $key=>$rank): ?><option value="<?php echo ($rank["value"]); ?>" <?php if($rank["value"] == $comment['comment_rank']): ?>selected='selected'<?php endif; ?>>
+        <?php if(is_array($comment_ranks)): foreach($comment_ranks as $key=>$rank): ?><option value="<?php echo ($rank["value"]); ?>" <?php if($rank['value'] == $comment['comment_rank']): ?>selected='selected'<?php endif; ?>>
                 <?php echo ($rank["value"]); ?>
             </option><?php endforeach; endif; ?>
     </select>
@@ -97,6 +97,7 @@
 
 <div class="form-group">
     <input type="hidden" name="comment_id" value="<?php echo ($comment["comment_id"]); ?>">
+    <input type="hidden" name="user_id" value="<?php echo ($comment["user_id"]); ?>">
     <input type="submit" value=" 确定 " class="form-control btn btn-primary">
 </div>
         </form>

@@ -8,6 +8,38 @@ class UserController extends CommonController{
 		$this->display('index');
 	}
 
+    public function profileSetting()
+    {
+        $this->assign('profile');
+    }
+
+    public function orderlistSetting()
+    {
+        $this->assign('orderlist');
+    }
+
+    public function addresslistSetting()
+    {
+        $this->assign('addresslist');
+    }
+
+    public function collectionlistSetting()
+    {
+        $this->assign('collectionlist');
+    }
+
+    public function commentlistSetting()
+    {
+        $this->assign('commentlist');
+    }
+
+    public function accountSetting()
+    {
+        $this->assign('account');
+    }
+
+    public function
+
 	
 
 	public function addGoodsToCollect(){

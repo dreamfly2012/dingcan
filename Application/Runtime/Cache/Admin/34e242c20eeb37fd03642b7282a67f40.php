@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>品牌编辑</title>
+    <title>评论修改</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,62 +56,50 @@
 
 <div class="left_content">
     <ul class="list-group black">
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandAdd');?>">品牌添加</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandList');?>">品牌列表</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandRecycleBinList');?>">品牌回收站</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Comment/commentAdd');?>">添加评论</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Comment/commentList');?>">评论列表</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Comment/commentRecycleBinList');?>">评论回收站</a></li>
     </ul>
 </div>
 
-<div class="right_content">
+<div class="right_content container">
     <div class="container">
-        <h2>品牌编辑</h2>
-        <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Brand/updateBrand');?>" method="post" class="form" role="form">
-            <div class="container">
-    <div class="form-group">
-        <label for="brand_name">品牌名称</label>
-        <input type="text" name="brand_name" id="brand_name" value="<?php echo ($brand["brand_name"]); ?>" class="form-control" placeholder="品牌名称">
-    </div>
-    <div class="form-group">
-        <label for="brand_logo">品牌logo</label>
-        <?php if($brand["brand_logo"] == ''): ?><input type="file" name="brand_logo" id="brand_logo" class="form-control" />
-            <p class="help-block">图片未上传</p>
-        <?php else: ?>
-            <img src="/Uploads/<?php echo ($brand["brand_logo"]); ?>" width="50" height="50" alt="logo"/>
-            <input type="file" name="brand_logo" id="brand_logo" class="form-control" />
-            <p class="help-block">重新上传将删除源文件</p><?php endif; ?>
-    </div>
-    <div class="form-group">
-        <label for="brand_desc">品牌描述</label>
-        <input type="text" name="brand_desc" id="brand_desc" value="<?php echo ($brand["brand_desc"]); ?>" class="form-control" placeholder="品牌描述" />
-    </div>
-    <div class="form-group">
-        <label for="site_url">品牌网址</label>
-        <input type="text" name="site_url" id="site_url" value="<?php echo ($brand["site_url"]); ?>" class="form-control" placeholder="品牌网址"/>
-    </div>
-    <div class="form-group">
-        <label for="sort_order">品牌排序</label>
-        <input type="text" name="sort_order" id="sort_order" value="<?php echo ($brand["sort_order"]); ?>" class="form-control" placeholder="品牌排序"/>
-    </div>
-    <div class="form-group">
-        <input type="hidden" name="brand_id" value="<?php echo ($brand["brand_id"]); ?>">
-        <input type="submit" value=" 确定 " class="form-control btn btn-primary">
-    </div>
+        <h2>评论编辑</h2>
+        <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Comment/updateComment');?>" method="post" class="form" role="form">
+            <div class="form-group">
+    <label>评论人：</label>
+    <span><input type="text" name="user_name" value="<?php echo ($comment["user_name"]); ?>" class="form-control" /></span>
 </div>
 
-<script type="text/javascript" src="/Public/Admin/jqvalidate/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/jqvalidate/messages_zh.min.js"></script>
+<div class="form-group">
+    <label>评论商品：</label>
+    <select name="goods_id" id="goods_id" class="form-control">
+        <?php if(is_array($goods_list)): foreach($goods_list as $key=>$goods): ?><option value="<?php echo ($goods["goods_id"]); ?>" <?php if($goods['goods_id'] == $comment['goods_id']): ?>selected='selected'<?php endif; ?>>
+                <?php echo ($goods["goods_name"]); ?>
+            </option><?php endforeach; endif; ?>
+    </select>
+    <a href="<?php echo U('Home/Goods/goodsDetail',array('goods_id'=>$comment['goods_id']));?>" target="_blank"><?php echo (getgoodsnamebyid($comment["goods_id"])); ?></a>
+</div>
 
-<script>
-    $(document).ready(function(){
-        $("#form").validate({
-            rules: {
-                brand_name: {
-                    required: true
-                }
-            }
-        });
-    });
-</script>
+<div class="form-group">
+    <label for="content">评论内容：</label>
+    <textarea name="content" id="content" class="form-control"><?php echo ($comment["content"]); ?></textarea>
+</div>
+
+<div class="form-group">
+    <label for="comment_rank">评论分数：</label>
+    <select name="comment_rank" id="comment_rank" class="form-control">
+        <?php if(is_array($comment_ranks)): foreach($comment_ranks as $key=>$rank): ?><option value="<?php echo ($rank["value"]); ?>" <?php if($rank['value'] == $comment['comment_rank']): ?>selected='selected'<?php endif; ?>>
+                <?php echo ($rank["value"]); ?>
+            </option><?php endforeach; endif; ?>
+    </select>
+</div>
+
+<div class="form-group">
+    <input type="hidden" name="comment_id" value="<?php echo ($comment["comment_id"]); ?>">
+    <input type="hidden" name="user_id" value="<?php echo ($comment["user_id"]); ?>">
+    <input type="submit" value=" 确定 " class="form-control btn btn-primary">
+</div>
         </form>
     </div>
 </div>

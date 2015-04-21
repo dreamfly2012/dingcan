@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>品牌编辑</title>
+    <title>添加兑换券</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,6 +39,7 @@
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
                 <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
                 <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
                
             </ul>
@@ -56,59 +57,72 @@
 
 <div class="left_content">
     <ul class="list-group black">
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandAdd');?>">品牌添加</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandList');?>">品牌列表</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Brand/brandRecycleBinList');?>">品牌回收站</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponAdd');?>">添加兑换券</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponList');?>">兑换券列表</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponRecycleBinList');?>">兑换券回收站</a></li>
     </ul>
 </div>
 
 <div class="right_content">
     <div class="container">
-        <h2>品牌编辑</h2>
-        <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Brand/updateBrand');?>" method="post" class="form" role="form">
-            <div class="container">
-    <div class="form-group">
-        <label for="brand_name">品牌名称</label>
-        <input type="text" name="brand_name" id="brand_name" value="<?php echo ($brand["brand_name"]); ?>" class="form-control" placeholder="品牌名称">
-    </div>
-    <div class="form-group">
-        <label for="brand_logo">品牌logo</label>
-        <?php if($brand["brand_logo"] == ''): ?><input type="file" name="brand_logo" id="brand_logo" class="form-control" />
-            <p class="help-block">图片未上传</p>
-        <?php else: ?>
-            <img src="/Uploads/<?php echo ($brand["brand_logo"]); ?>" width="50" height="50" alt="logo"/>
-            <input type="file" name="brand_logo" id="brand_logo" class="form-control" />
-            <p class="help-block">重新上传将删除源文件</p><?php endif; ?>
-    </div>
-    <div class="form-group">
-        <label for="brand_desc">品牌描述</label>
-        <input type="text" name="brand_desc" id="brand_desc" value="<?php echo ($brand["brand_desc"]); ?>" class="form-control" placeholder="品牌描述" />
-    </div>
-    <div class="form-group">
-        <label for="site_url">品牌网址</label>
-        <input type="text" name="site_url" id="site_url" value="<?php echo ($brand["site_url"]); ?>" class="form-control" placeholder="品牌网址"/>
-    </div>
-    <div class="form-group">
-        <label for="sort_order">品牌排序</label>
-        <input type="text" name="sort_order" id="sort_order" value="<?php echo ($brand["sort_order"]); ?>" class="form-control" placeholder="品牌排序"/>
-    </div>
-    <div class="form-group">
-        <input type="hidden" name="brand_id" value="<?php echo ($brand["brand_id"]); ?>">
-        <input type="submit" value=" 确定 " class="form-control btn btn-primary">
-    </div>
+        <h2>添加兑换券</h2>
+        <form name="form" id="form" enctype="multipart/form-data" action="<?php echo U('Coupon/addCoupon');?>" method="post" class="form" role="form">
+            <div class="form-group">
+    <label for="name">名称：</label>
+    <span><input type="text" name="name" id="name" value="<?php echo ($coupon["name"]); ?>" class="form-control" /></span>
 </div>
 
-<script type="text/javascript" src="/Public/Admin/jqvalidate/jquery.validate.min.js"></script>
-<script type="text/javascript" src="/Public/Admin/jqvalidate/messages_zh.min.js"></script>
+<div class="form-group">
+    <label for="coupon_code">兑换码：<a href="javascript:;" class="generate">生成唯一兑换码</a></label>
+    <span><input type="text" name="coupon_code" id="coupon_code" value="<?php echo ($coupon["coupon_code"]); ?>" class="form-control" /></span>
+</div>
 
+<div class="form-group">
+    <label for="pay_points">兑换分数：</label>
+    <input type="text" name="pay_points" id="pay_points" class="form-control" value="<?php echo ($coupon["pay_points"]); ?>" />
+</div>
+
+<div class="form-group">
+    <label for="validate_date">有效期：</label>
+    <input type="text" name="validate_date" id="validate_date" class="form-control" value="<?php echo (date('Y-m-d H:i:s',$coupon["validate_date"])); ?>"/>
+</div>
+
+<div class="form-group">
+    <label for="status">是否可用:</label>
+    <select name="status" id="status" class="form-control">
+        <?php if(is_array($choice_statuses)): foreach($choice_statuses as $key=>$choice): ?><option value="<?php echo ($choice["value"]); ?>" <?php if($choice['value'] == $coupon['status']): ?>selected="selected"<?php endif; ?>><?php echo ($choice["name"]); ?></option><?php endforeach; endif; ?>
+    </select>
+</div>
+
+<div class="form-group">
+    <input type="hidden" name="id" value="<?php echo ($coupon["id"]); ?>">
+    <input type="submit" value=" 确定 " class="form-control btn btn-primary">
+</div>
+
+<script type="text/javascript" src="/Public/Admin/timepicker/js/jquery-ui-timepicker-addon.js"></script>
 <script>
+    var __GENERATE_CODE_URL__ = "<?php echo U('Coupon/generateCode');?>";
     $(document).ready(function(){
-        $("#form").validate({
-            rules: {
-                brand_name: {
-                    required: true
+        $("#validate_date").datetimepicker({
+            timeFormat: 'HH:mm:ss',
+            dateFormat: 'yy-mm-dd'
+        });
+
+        $(".generate").click(function(){
+            $.ajax({
+                url: __GENERATE_CODE_URL__,
+                type: "POST",
+                dataType: "json",
+                success: function (data) {
+                    if(data.message=="success"){
+                        alert("生成兑换券成功！");
+                        $("#coupon_code").val(data.info);
+                    }else{
+                        alert("生成兑换券失败");
+                    }
+
                 }
-            }
+            });
         });
     });
 </script>

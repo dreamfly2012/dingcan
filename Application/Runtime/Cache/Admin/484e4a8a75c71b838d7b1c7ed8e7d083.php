@@ -29,7 +29,7 @@
 
             <a class="navbar-brand" href="#">巨搜Shop</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapse-1">>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Goods/goodsList');?>">商品管理</a></li>
                 <li><a href="<?php echo U('Brand/brandList');?>">品牌管理</a></li>
@@ -39,6 +39,7 @@
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
                 <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
                 <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
                
             </ul>

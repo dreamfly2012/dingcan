@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>评论列表</title>
+    <title>评论回收站展示页</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,6 @@
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
                 <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
-                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
                 <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
                
             </ul>
@@ -66,7 +65,7 @@
 <div class="right_content">
     <div class="table-responsive container">
         <table class="table table-striped table-bordered">
-            <caption>评论列表</caption>
+            <caption>评论回收站</caption>
             <thead>
             <tr>
                 <th>
@@ -83,8 +82,10 @@
             </tr>
             </thead>
 
+
             <tbody>
             <?php if(is_array($list)): foreach($list as $key=>$comment): ?><tr>
+                <tr>
                     <td>
                         <input type="checkbox" name="checkboxes[]" value="<?php echo ($comment["comment_id"]); ?>" class="single_check"/>
                         <span><?php echo ($comment["comment_id"]); ?></span>
@@ -99,118 +100,145 @@
                         <textarea class="form-control"><?php echo ($comment["content"]); ?></textarea>
                     </td>
                     <td>
-                        <span><?php echo (date('Y-m-d H:i:s',$comment["add_time"])); ?></span>
+                        <span><?php echo (date('Y-m-d m:i:s',$comment["add_time"])); ?></span>
                     </td>
+
+                <
                     <td>
-                        <a href="<?php echo U('Comment/commentEdit',array('comment_id'=>$comment['comment_id']));?>" title="编辑">编辑</a>
-                        <a href="javascript:;" class="del_comment" data-id="<?php echo ($comment["comment_id"]); ?>" title="回收站">删除</a>
+                        <a href="javascript:;" class="revert_comment" data-id="<?php echo ($comment["comment_id"]); ?>" title="还原">还原</a>
+                        <a href="javascript:;" class="del_comment" data-id="<?php echo ($comment["comment_id"]); ?>" title="彻底删除">彻底删除</a>
                     </td>
                 </tr><?php endforeach; endif; ?>
             </tbody>
         </table>
-
-        <div class="page_wrapper">
-            <ul class="pagination"><?php echo ($page); ?></ul>
-        </div>
+        <div class="page_wrapper"><ul class="pagination"><?php echo ($page); ?></ul></div>
     </div>
 
     <div class="container">
         <legend>批量操作</legend>
         <div class="form-group">
-            <select id="batchsel" class="form-control">
+            <select class="form-control" id="batchsel">
                 <option value="">请选择操作</option>
-                <option	value="recycle">删除到回收站</option>
+                <option value="restore">还原</option>
+                <option value="delete">彻底删除</option>
             </select>
         </div>
+
         <div class="form-group">
-            <input type="button" id="batch" value="确认" class="btn btn-primary form-control" />
+            <input type="submit" id="batch" value="确认" class="btn btn-primary form-control">
         </div>
     </div>
 
-
 </div>
 <script>
-
-    var __DEL_COMMENT_URL__ = "<?php echo U('Comment/commentRecycleBin');?>";
-    var __BATCH_COMMENT_URL__ = "<?php echo U('Comment/commentBatch');?>";
-
-    var message_confirm_batch_recycle = "确认要批量删除评论到回收站吗？";
-    var message_no_select_operation ="你没有选择任何操作";
-    var message_no_select_brand = "你没有选择任何品牌";
-    var message_update_success = "批量修改成功";
-
+    var __COMMENT_REVERT__ = "<?php echo U('Comment/commentRevert');?>";
+    var __DEL_RECYCLE_URL__ = "<?php echo U('Comment/commentDelRecycleBin');?>";
+    var __BATCH_RECYCLE_URL__ = "<?php echo U('Comment/recycleBatch');?>";
 
     function message(option)
     {
         switch(option)
         {
-            case 'recycle':
-                return message_confirm_batch_recycle;
+            case 'restore':
+                return "确认要批量从回收站还原评论吗？";
+                break;
+            case 'delete':
+                return "确认要真的批量删除评论？将不能恢复了！";
                 break;
             default:
                 return "";
         }
     }
 
+
     $(document).ready(function(){
-        //评论删除
-        $(".del_comment").click(function() {
-            if (confirm("确认删除评论到回收站吗?")) {
-                var $this = $(this);
-                var comment_id = $(this).attr('data-id');
-                $.ajax({
-                    url: __DEL_COMMENT_URL__,
-                    type: "POST",
-                    data: {'comment_id': comment_id},
-                    dataType: "html",
-                    success: function (data) {
-                        if(data=="true"){
-                            alert("删除评论成功！");
-                            $this.parent('td').parent('tr').remove();
-                        }else{
-                            alert("删除评论失败！");
-                        }
-
-                    }
-                });
-            }
-        });
-
-
-        //评论批量编辑
+        //回收站批量编辑
         $("#batch").click(function(){
             var option = $("#batchsel").val();
             var comment_ids = '';
-            $("[name='checkboxes[]']:checkbox").each(function(){
+            $(".single_check").each(function(){
                 if($(this).prop('checked')==true){
                     comment_ids += $(this).val()+":";
                 }
             });
             if(option == ''){
-                alert(message_no_select_operation);
+                alert("你没有选择任何操作!");
             }else if(comment_ids == ''){
-                alert(message_no_select_brand);
+                alert("你没有选择任何评论!");
             }else{
-                var comfirm_message = message(option);
-
-                if(confirm(comfirm_message)){
+                var confirm_message = message(option);
+                if(confirm(confirm_message)){
                     $.ajax({
-                        url: __BATCH_COMMENT_URL__,
+                        url: __BATCH_RECYCLE_URL__,
                         type: "POST",
                         data: { 'comment_ids': comment_ids, 'operation': option},
                         dataType: "html",
                         success: function(data){
-                            // TODO: 没有对返回结果进行判读
-                            alert(message_update_success);
-                            window.location.reload();
+                            if(data=="true"){
+                                if(option=="restore"){
+                                    alert("批量还原评论成功！");
+                                }else if(option=="delete"){
+                                    alert("批量删除评论成功！");
+                                }
+                                window.location.reload();
+                            }else{
+                                if(option=="restore"){
+                                    alert("批量还原评论失败！");
+                                }else if(option=="delete"){
+                                    alert("批量删除评论失败！");
+                                }
+                            }
                         }
                     });
                 }
             }
         });
+
+
+        //删除
+        $(".del_comment").click(function(){
+            if(confirm("确认删除评论?将无法恢复!")){
+                var $this = $(this);
+                var comment_id = $(this).attr('data-id');
+                $.ajax({
+                    url: __DEL_RECYCLE_URL__,
+                    type: "POST",
+                    data: {'comment_id':comment_id},
+                    dataType: "html",
+                    success: function(data){
+                        if(data=="true"){
+                            alert("删除评论成功！");
+                            $this.parent('td').parent('tr').remove();
+                        }else{
+                           alert("删除评论失败");
+                        }
+                    }
+                });
+            }
+        });
+
+        //还原
+        $(".revert_comment").click(function(){
+            if(confirm("确认从回收站恢复评论?")){
+                var $this = $(this);
+                var comment_id = $(this).attr('data-id');
+                $.ajax({
+                    url: __COMMENT_REVERT__,
+                    type: "POST",
+                    data: {'comment_id':comment_id},
+                    dataType: "html",
+                    success: function(data){
+                        if(data=="true"){
+                            alert("成功从回收站还原评论！");
+                            $this.parent('td').parent('tr').remove();
+                        }else{
+                            alert("还原评论失败！");
+                        }
+                    }
+                });
+            }
+        });
     });
-
-
 </script>
 
 <script type="text/javascript" src="/Public/Admin/dist/js/common.js"></script>

@@ -170,21 +170,20 @@
                     <section class="comments">
                         <?php if($comments): ?><p class="mb10 pt10">现在还没有评论.</p><?php endif; ?>
 
-                        foreach
 
-                        <div class="media">
+                        <?php if(is_array($comments)): foreach($comments as $key=>$comment): ?><div class="media">
                           <a class="pull-left" href="#">
                             <img class="media-object img-circle" data-src="holder.js/64x64">
-                            <p>匿名用户</p>
+                            <p class="pt5"><?php echo ($comment["user_name"]); ?></p>
                           </a>
                           <div class="media-body">
-                            <p class="media-heading">鞋子我已经收到了，做工和质量还都不错，店家发货也很快，谢谢店家的推荐！</p>
+                            <p class="media-heading"></p>
                             
                             <div class="media grey">
                                <p>2015年03月29日 12:12 颜色分类:黄色  尺码:35</p>
                             </div>
                           </div>
-                        </div>
+                        </div><?php endforeach; endif; ?>
                     </section>
                 </div>
             </div>

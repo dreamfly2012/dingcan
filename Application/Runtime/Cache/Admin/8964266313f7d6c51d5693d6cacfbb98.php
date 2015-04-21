@@ -2,7 +2,7 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>评论列表</title>
+    <title>兑换券列表</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -57,53 +57,57 @@
 
 <div class="left_content">
     <ul class="list-group black">
-        <li class="list-group-item"><a href="<?php echo U('Comment/commentAdd');?>">添加评论</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Comment/commentList');?>">评论列表</a></li>
-        <li class="list-group-item"><a href="<?php echo U('Comment/commentRecycleBinList');?>">评论回收站</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponAdd');?>">添加兑换券</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponList');?>">兑换券列表</a></li>
+        <li class="list-group-item"><a href="<?php echo U('Coupon/couponRecycleBinList');?>">兑换券回收站</a></li>
     </ul>
 </div>
 
 <div class="right_content">
     <div class="table-responsive container">
         <table class="table table-striped table-bordered">
-            <caption>评论列表</caption>
+            <caption>兑换券列表</caption>
             <thead>
             <tr>
                 <th>
                     <input class="check_all" type="checkbox">
-                    <a href="<?php echo U('Comment/CommentList',array('order_by'=>'comment_id','order_sort'=>$order_sort));?>" title="点击排序">编号</a>
+                    <a href="<?php echo U('Coupon/couponList',array('order_by'=>'id','order_sort'=>$order_sort));?>" title="点击排序">编号</a>
                 </th>
                 <th>
-                    <a href="<?php echo U('Comment/CommentList',array('order_by'=>'user_name','order_sort'=>$order_sort));?>" title="点击排序">评论人</a></th>
-                <th>
-                    <a href="<?php echo U('Comment/CommentList',array('order_by'=>'comment_rank','order_sort'=>$order_sort));?>" title="点击排序">评论分数</a></th>
-                <th><a href="<?php echo U('Comment/CommentList',array('order_by'=>'content','order_sort'=>$order_sort));?>" title="点击排序">评论内容</a></th>
-                <th><a href="<?php echo U('Comment/CommentList',array('order_by'=>'add_time','order_sort'=>$order_sort));?>" title="点击排序">评论时间</a></th>
+                    <a href="<?php echo U('Coupon/couponList',array('order_by'=>'name','order_sort'=>$order_sort));?>" title="点击排序">兑换券名称</a></th>
+                <th><a href="<?php echo U('Coupon/couponList',array('order_by'=>'pay_points','order_sort'=>$order_sort));?>" title="点击排序">面值</a></th>
+                <th><a href="<?php echo U('Coupon/couponList',array('order_by'=>'coupon_code','order_sort'=>$order_sort));?>" title="点击排序">兑换码</a></th>
+                <th><a href="<?php echo U('Coupon/couponList',array('order_by'=>'validate_date','order_sort'=>$order_sort));?>" title="点击排序">有效期</a></th>
+                <th><a href="<?php echo U('Coupon/couponList',array('order_by'=>'status','order_sort'=>$order_sort));?>" title="点击排序">可用状态</a></th>
                 <th>操作</th>
             </tr>
             </thead>
 
             <tbody>
-            <?php if(is_array($list)): foreach($list as $key=>$comment): ?><tr>
+            <?php if(is_array($list)): foreach($list as $key=>$coupon): ?><tr>
                     <td>
-                        <input type="checkbox" name="checkboxes[]" value="<?php echo ($comment["comment_id"]); ?>" class="single_check"/>
-                        <span><?php echo ($comment["comment_id"]); ?></span>
+                        <input type="checkbox" name="checkboxes[]" value="<?php echo ($coupon["id"]); ?>" class="single_check"/>
+                        <span><?php echo ($coupon["id"]); ?></span>
                     </td>
                     <td>
-                        <span><?php echo ($comment["user_name"]); ?></span>
+                        <span><?php echo ($coupon["name"]); ?></span>
                     </td>
                     <td>
-                        <span><?php echo ($comment["comment_rank"]); ?></span>
+                        <span><?php echo ($coupon["pay_points"]); ?></span>
                     </td>
                     <td>
-                        <textarea class="form-control"><?php echo ($comment["content"]); ?></textarea>
+                        <span><?php echo ($coupon["coupon_code"]); ?></span>
                     </td>
                     <td>
-                        <span><?php echo (date('Y-m-d H:i:s',$comment["add_time"])); ?></span>
+                        <span><?php echo (date('Y-m-d H:i:s',$coupon["validate_date"])); ?></span>
                     </td>
                     <td>
-                        <a href="<?php echo U('Comment/commentEdit',array('comment_id'=>$comment['comment_id']));?>" title="编辑">编辑</a>
-                        <a href="javascript:;" class="del_comment" data-id="<?php echo ($comment["comment_id"]); ?>" title="回收站">删除</a>
+                        <span><?php echo ($coupon["status"]); ?></span>
+                    </td>
+
+                    <td>
+                        <a href="<?php echo U('Coupon/couponEdit',array('id'=>$coupon['id']));?>" title="编辑">编辑</a>
+                        <a href="javascript:;" class="del_coupon" data-id="<?php echo ($coupon["id"]); ?>" title="回收站">删除</a>
                     </td>
                 </tr><?php endforeach; endif; ?>
             </tbody>
@@ -131,12 +135,12 @@
 </div>
 <script>
 
-    var __DEL_COMMENT_URL__ = "<?php echo U('Comment/commentRecycleBin');?>";
-    var __BATCH_COMMENT_URL__ = "<?php echo U('Comment/commentBatch');?>";
+    var __DEL_COUPON_URL__ = "<?php echo U('Coupon/couponRecycleBin');?>";
+    var __BATCH_COUPON_URL__ = "<?php echo U('Coupon/couponBatch');?>";
 
-    var message_confirm_batch_recycle = "确认要批量删除评论到回收站吗？";
+    var message_confirm_batch_recycle = "确认要批量删除兑换券到回收站吗？";
     var message_no_select_operation ="你没有选择任何操作";
-    var message_no_select_brand = "你没有选择任何品牌";
+    var message_no_select_brand = "你没有选择任何兑换券";
     var message_update_success = "批量修改成功";
 
 
@@ -153,22 +157,22 @@
     }
 
     $(document).ready(function(){
-        //评论删除
-        $(".del_comment").click(function() {
-            if (confirm("确认删除评论到回收站吗?")) {
+        //品牌删除
+        $(".del_coupon").click(function() {
+            if (confirm("确认删除兑换券")) {
                 var $this = $(this);
-                var comment_id = $(this).attr('data-id');
+                var id = $(this).attr('data-id');
                 $.ajax({
-                    url: __DEL_COMMENT_URL__,
+                    url: __DEL_COUPON_URL__,
                     type: "POST",
-                    data: {'comment_id': comment_id},
+                    data: {'id': id},
                     dataType: "html",
                     success: function (data) {
                         if(data=="true"){
-                            alert("删除评论成功！");
+                            alert("删除兑换券成功！");
                             $this.parent('td').parent('tr').remove();
                         }else{
-                            alert("删除评论失败！");
+                            alert("删除兑换券失败！");
                         }
 
                     }
@@ -177,27 +181,27 @@
         });
 
 
-        //评论批量编辑
+        //品牌批量编辑
         $("#batch").click(function(){
             var option = $("#batchsel").val();
-            var comment_ids = '';
+            var ids = '';
             $("[name='checkboxes[]']:checkbox").each(function(){
                 if($(this).prop('checked')==true){
-                    comment_ids += $(this).val()+":";
+                    ids += $(this).val()+":";
                 }
             });
             if(option == ''){
                 alert(message_no_select_operation);
-            }else if(comment_ids == ''){
+            }else if(ids == ''){
                 alert(message_no_select_brand);
             }else{
                 var comfirm_message = message(option);
 
                 if(confirm(comfirm_message)){
                     $.ajax({
-                        url: __BATCH_COMMENT_URL__,
+                        url: __BATCH_COUPON_URL__,
                         type: "POST",
-                        data: { 'comment_ids': comment_ids, 'operation': option},
+                        data: { 'ids': ids, 'operation': option},
                         dataType: "html",
                         success: function(data){
                             // TODO: 没有对返回结果进行判读

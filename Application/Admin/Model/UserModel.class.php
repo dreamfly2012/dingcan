@@ -10,7 +10,7 @@ namespace Admin\Model;
 
 use Think\Model;
 
-class UsersModel extends Model{
+class UserModel extends Model{
     public function checkEmailExist($email){
         $info = $this->field('email')->where(array('email'=>$email))->select();
         if($info){
