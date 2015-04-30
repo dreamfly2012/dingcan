@@ -10,12 +10,18 @@ namespace Home\Model;
 
 use Think\Model;
 
-class GoodsModel extends Model{
+class GoodsModel extends CommonModel{
+    public function getAllIndexGoods(){
+        $result = $this->where(array('is_show_index'=>1,'is_delete'=>0))->select();
+        return $result;
+    }
+
     public function getAllGoodsByStoreId($store_id){
         $result = $this->where(array('store_id'=>$store_id,'is_delete'=>0))->select();
         return $result;
     }
 
+    
     public function getGoodsById($goods_id){
     	$result = $this->where(array('goods_id'=>$goods_id))->find();
     	return $result;
@@ -31,7 +37,15 @@ class GoodsModel extends Model{
         return $result['store_id'];
     }
 
+    public function getGoodsByCatId($cat_id){
+        $result = $this->where(array('store_id'=>$this->store_id,'cat_id'=>$cat_id))->select();
+        return $result;
+    }
 
+    public function getCatIdByGoodsId($goods_id){
+        $result = $this->field('cat_id')->where(array('goods_id'=>$goods_id))->find();
+        return $result['cat_id'];
+    }
 
     
 }

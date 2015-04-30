@@ -10,8 +10,8 @@ namespace Admin\Model;
 use Think\Model;
 
 class CategoryModel extends Model{
-    public function getChildCategory($parent,$store_id){
-        $children = $this->field('cat_id,cat_name')->where(array('parent_id'=>$parent,'store_id'=>$store_id))->select();
+    public function getChildCategory($parent){
+        $children = $this->field('cat_id,cat_name,sort_order')->where(array('parent_id'=>$parent))->order('sort_order asc')->select();
         return $children;
     }
 
@@ -20,8 +20,8 @@ class CategoryModel extends Model{
         return $result;
     }
 
-    public function deleteByStoreId($store_id){
-    	$result = $this->where(array('store_id'=>$store_id))->delete();
+    public function deleteAllInfo(){
+    	$result = $this->where('1')->delete();
     	return $result;
     }
 }

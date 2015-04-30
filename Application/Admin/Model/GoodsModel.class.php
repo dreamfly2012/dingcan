@@ -39,6 +39,11 @@ class GoodsModel extends Model{
             return true;
         }
     }
+
+    public function getAllStoreGoods(){
+        $result = $this->select();
+        return $result;
+    }
     public function getAllGoods(){
         $store_id = session('store_id');
         $result = $this->where(array('store_id'=>$store_id))->select();
@@ -78,6 +83,11 @@ class GoodsModel extends Model{
 
     public function UpdateGoodsOnsale($goods_id,$is_on_sale){
         $result = $this->where(array('goods_id'=>$goods_id))->save(array('is_on_sale'=>$is_on_sale));
+        return $result;
+    }
+
+    public function UpdateGoodsShowIndex($goods_id,$is_show_index){
+        $result = $this->where(array('goods_id'=>$goods_id))->save(array('is_show_index'=>$is_show_index));
         return $result;
     }
 

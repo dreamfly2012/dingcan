@@ -84,7 +84,23 @@ js_comment 表 id_value => goods_id 添加列is_show default 1  finished
 
 添加js_coupon 表 finished
 
+小家电 厨房用品 床上用品 儿童玩具 类别 finished
+
+ip定位 finished 2/3
+
+幸运大转盘 finidsed
+
+注册手机验证（数据库保存手机密码）us199需要代码修改
+短信接口：
+http://223.4.21.214:8180/help.htm
+
+短信管理平台：
+http://223.4.21.214/frmLogin.aspx
 
 
+TODO:限时抢购
+倒计时->打折---
 
+
+TODO:秒杀实现原理
 

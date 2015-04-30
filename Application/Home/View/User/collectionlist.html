@@ -1,0 +1,34 @@
+<include file="Public/header" title="{$store_config.store_title}" description="{$store_config.store_desc}"/>
+
+<div class="header wthrough" style="background: none;">
+<include file="Public/nav_header" />
+</div>
+
+<div class="content w1200 m0auto">
+	<include file="User/user_nav" />
+	<div class="content-right">
+        <div class="page-header">
+            <h2>收藏信息</h2>
+        </div>
+    	   <table class="table table-hover table-striped table-bordered">
+            <thead>
+              <tr>
+                <th>商品名称</th>
+                <th>价格</th>
+                <th>操作</th>
+              </tr>
+            </thead>
+            <tbody>
+            <foreach name="collections" item="collection">
+              <tr>
+                <td><a href="{:U('Goods/goodsDetail',array('goods_id'=>$collection['goods_id']))}">{$collection.goods_name}</a></td> 
+                <td>{$collection.shop_price}</td> 
+                <td><a href="javascript:;" class="del_collcet" data-goods-id="{$collection['goods_id']}">删除</a></td> 
+              </tr>
+            </foreach>
+            </tbody>
+         </table>
+  </div>
+</div> 
+ 
+<include file="Public/footer" />

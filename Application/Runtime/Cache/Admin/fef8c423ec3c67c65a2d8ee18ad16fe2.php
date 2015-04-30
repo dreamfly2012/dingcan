@@ -17,25 +17,46 @@
     
 </head>
 <body>
-    <?php if($_SESSION['user_id']!= ''): ?><nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <?php if(!is_null(session('uid'))): ?>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+              <span class="sr-only">巨搜Shop<</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+
             <a class="navbar-brand" href="#">巨搜Shop</a>
         </div>
-        <div>
+        <div class="collapse navbar-collapse" id="navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="<?php echo U('Goods/goodsList');?>">商品管理</a></li>
+                <li><a href="<?php echo U('Brand/brandList');?>">品牌管理</a></li>
+                <li><a href="<?php echo U('Category/categoryList');?>">类别管理</a></li>
                 <li><a href="<?php echo U('Order/orderList');?>">订单管理</a></li>
+                <li><a href="<?php echo U('Ad/adList');?>">广告管理</a></li>
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
-                <li><a href="<?php echo U('User/userList');?>">会员管理</a></li>
-                <li><a href="<?php echo U('Shop/storeSetting');?>">商店设置</a></li>
+                <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
+                <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
+                <li><a href="<?php echo U('Store/showGoodsIndex');?>">主页面商品显示设置</a></li>
+               
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="<?php echo U('Login/logout');?>">注销</a></li>
+                <li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
             </ul>
         </div>
-    </nav><?php endif; ?>
+    </nav>
+    <?php endif; ?>
+   
+  
 
 
 
-<div class="left">
+<div class="left_content">
     <ul class="list-group black">
         <li class="list-group-item"><a href="<?php echo U('Order/orderList');?>">订单列表</a></li>
         <li class="list-group-item"><a href="<?php echo U('Order/orderSearch');?>">订单查询</a></li>
@@ -45,7 +66,7 @@
     </ul>
 </div>
 
-<div class="right table-responsive">
+<div class="right_content table-responsive">
     <table class="table table-striped table-bordered table_show">
         <caption>所有订单列表</caption>
         <thead>

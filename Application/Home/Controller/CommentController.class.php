@@ -12,7 +12,7 @@ class CommentController extends CommentController{
 	/**
 	 * 添加评论处理
 	 */
-	function addCommentHandle()
+	public function addCommentHandle()
     {
         $_POST = $this->zaddslashes($_POST);
 		$_POST['add_date'] = time();
@@ -35,4 +35,7 @@ class CommentController extends CommentController{
         	}
 		}
 	}
+
+
+    
 }

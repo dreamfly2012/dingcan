@@ -11,9 +11,9 @@ use Think\Model;
 
 class StoreConfigModel extends Model
 {
-    public function getAllInfoByStoreId($store_id)
+    public function getAllInfo()
     {
-        $result = $this->where(array('store_id'=>$store_id))->select();
+        $result = $this->select();
         return $result;
     }
 }

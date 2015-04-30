@@ -31,7 +31,7 @@ define('PS_PAYING',                 1); // 付款中
 define('PS_PAYED',                  2); // 已付款
 
 $debugArr = array(
-    //'SHOW_PAGE_TRACE' => true
+    'SHOW_PAGE_TRACE' => true
 );
 
 
@@ -87,12 +87,12 @@ $aliPayConfig = array(
         'seller_email'=>'',
 
         //这里是异步通知页面url，提交到项目的Pay控制器的notifyurl方法；
-        'notify_url'=>'http://my.jsshop.com/Pay/notifyUrl',
+        'notify_url'=>U('Pay/notifyUrl'),
 
         //这里是页面跳转通知url，提交到项目的Pay控制器的returnurl方法；
-        'return_url'=>'http://my.jsshop.com/works/lvsenshop/Pay/returnUrl'
+        'return_url'=>U('Pay/returnUrl'),
     )
 );
 
 
-return array_merge($sysArr, $databaseArr, $aliPayConfig);
+return array_merge($sysArr, $databaseArr,$debugArr, $aliPayConfig);

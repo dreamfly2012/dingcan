@@ -1,0 +1,78 @@
+﻿<div class="header_middle w1200 m0auto of ">
+    <div id="logo" class="fleft">
+        <a href="/"><img src="__PUBLIC__/Home/images/logo.png" alt="诚佰" height="68" width="210"></a>
+    </div>
+    <div class="fleft logo_ad ml10">
+    </div>
+    <div class="search_warp fright ml35" style="margin-right:80px;">
+        <div class="search">
+            <form action="{:U('Search/searchGoods')}" method="post" name="searchForm" id="searchForm">
+                <div class="input fleft"><input name="goods_name" type="text"></div>
+                <div class="submit fleft"><input value="搜 索" type="submit"></div>
+            </form>
+        </div>
+        <div class="clr"></div>
+        <div class="hot_keywords">
+            热门搜索：
+            <a href="{:U('Search/searchGoods',array('goods_name'=>'75老山神'))}" target="_blank">75老山神</a>&nbsp;
+            <a href="{:U('Search/searchGoods',array('goods_name'=>'沱牌'))}" target="_blank">沱牌十年</a>&nbsp;
+            <a href="{:U('Search/searchGoods',array('goods_name'=>'酒鬼'))}" target="_blank">酒鬼</a>&nbsp;
+            <a href="{:U('Search/searchGoods',array('goods_name'=>'益达'))}" target="_blank">益达</a>&nbsp;
+            <a href="{:U('Search/searchGoods',array('goods_name'=>'冰粉'))}" target="_blank">冰粉</a>&nbsp;
+        </div>
+    </div>
+</div>
+<div class="nav_awrp wthrough">
+    <div class="nav w1200 m0auto">
+        <div class="all_category fleft">
+            <div class="all_category_switch">
+                <span class="home fleft ml10 mr5"></span>全部商品分类
+                <span class="down fright mr20"></span>
+            </div>
+            
+            <div class="cateMenu none">
+                <ul>
+                    <volist name="nav_categories" id="nav_category" key="k">
+                        <li style="border-top: 0px;" <if condition="$k%2">class="even"</if>>
+                        <div class="cate-tag">
+                            <strong><a href="{:U('Category/categoryList',array('cat_id'=>$nav_category['cat_id']))}">{$nav_category['cat_name']}</a></strong>
+                            <div class="listModel">
+                                <volist name="nav_category.children" id="children_category">
+                                    <div style=" width:60px; float:left"><a href="{:U('Search/searchGoods',array('goods_name'=>$children_category['cat_name']))}">{$children_category['cat_name']}</a></div>
+                                </volist>
+                            </div>
+                        </div>
+                        <div class="list-item hide">
+                            <ul class="itemleft">
+                                <volist name="nav_category.children" id="children_category">
+                                <dl>
+                                    <dt>{$children_category['cat_name']}</dt>
+                                    <dd>
+                                        <volist name="children_category.children" id="sub_children_category">
+                                        <!--榨汁机、豆浆机、电饭煲、面包机、咖啡机、电烤箱、电磁炉、电饼铛、煮蛋器、酸奶机、电热水壶、电热饭盒-->
+                                        <a title="{$nav_goods.goods_name}" target="_blank" href="{:U('Search/searchGoods',array('goods_name'=>$sub_children_category['cat_name']))}">{$sub_children_category['cat_name']}</a>
+                                        </volist>
+                                    </dd>
+                                </dl>
+                                </volist>
+                            </ul>
+                        </div>
+                    </li>
+                    </volist>
+                </ul>
+            </div>
+        </div>
+        <div class="nav_list fleft">
+            <ul>
+                <li class="active"><a href="/">首页</a></li>
+                <li><a href="#">天天特惠</a></li>
+                <li><a href="#">限时秒杀</a></li>
+                <li><a href="#">会员专区</a></li>
+                <li><a href="{:U('Goods/exchangeGoods')}">兑换中心</a><div class="nav_hot"></div></li>
+                <li><a href="{:U('Lottery/index')}" target="_blank">幸运大转盘</a></li>
+                <li><a href="{:U('Construct/index')}">诚佰跑跑团</a></li>
+                <li><a href="{:U('Construct/index')}">诚佰帮帮团</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

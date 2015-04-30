@@ -14,6 +14,10 @@ class OrderController extends CommonController{
 
     }
 
+    public function orderPrintTemplate(){
+
+    }
+
     //根据pay_id 返回支付的相关新消息
     public function getPaymentInfoById($pay_id){
         $d = D('Payment');
@@ -630,8 +634,6 @@ class OrderController extends CommonController{
     }
 
     public function orderList(){
-        $this->checkPrivilege();
-
         $store_id = session("store_id");
         $o = D('OrderInfo');
 

@@ -22,7 +22,6 @@ class NavModel extends CommonModel
     public function getNavByParentId($id) {
         $condition['store_id'] = $this->store_id;
         $condition['parent_id'] = $id;
-        //$condition['_logic'] = 'AND';
         $result = $this->where($condition)->select();
         return $result;
     }

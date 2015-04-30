@@ -39,7 +39,9 @@
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
                 <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
                 <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
+                <li><a href="<?php echo U('Store/showGoodsIndex');?>">主页面商品显示设置</a></li>
                
             </ul>
             <ul class="nav navbar-nav navbar-right">
@@ -128,22 +130,23 @@ ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree li.jqtree-se
     var __UPDATE_CATEOGRY__ = "<?php echo U('Category/updateCategory');?>";
 
     var bigid = 0;
+    var cat_ids = new Array();
 
-    function getMaxId(json){
-    	var ids = new Array();
-    	if(json!=undefined){
-    		if(json.length!=0){
-    			var length = json.length;
-				for(var i=0; i<length; i++){
-					bigid = json[i].id;
-					if(json[i].children!=undefined){
-						getMaxId(json[i].children);
+    var MaxId = function getMaxId(categories){
+        if(categories!=undefined){
+    		if(categories.length!=0){
+                for(var i=0; i<categories.length; i++){
+                    cat_ids.push(categories[i].cat_id);
+                    if(bigid<parseInt(categories[i].cat_id)){
+                        bigid = parseInt(categories[i].cat_id);
+                    }
+                    if(categories[i].children!=undefined){
+                        getMaxId(categories[i].children);
 					}
 				}
     		}
 			
     	}
-		return bigid;
     }
 
     $(document).ready(function(){
@@ -153,12 +156,17 @@ ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree li.jqtree-se
             dragAndDrop:true
         });
 
+        $('#category').click(function(){
+             var node = $("#category").tree('getSelectedNode');
+             console.log(node);
+        });
+
         $("#update_category").click(function(){
-        	var json = $.parseJSON($("#category").tree('toJson'));
+        	var json_data = $("#category").tree('toJson');
         	$.ajax({
 	            url: __UPDATE_CATEOGRY__,
 	            type: "POST",
-	            data: { 'category':json },
+	            data: { 'category':json_data },
 	            dataType: "html",
 	            success: function(data){
                     if(data=="true"){
@@ -173,7 +181,14 @@ ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree li.jqtree-se
 
         $("#add_category").click(function(){
         	var json = $.parseJSON($("#category").tree('toJson'));
-        	var id = parseInt(getMaxId(json));
+            MaxId(json);
+            var id = 0;
+        	for(var i=0;i<cat_ids.length;i++){
+                if(id< parseInt(cat_ids[i])){
+                    id = parseInt(cat_ids[i]);
+                }
+            }
+            //console.log(bigid);
             $('#category').tree(
                 'appendNode',
                 {
@@ -194,13 +209,14 @@ ul.jqtree-tree li.jqtree-selected > .jqtree-element, ul.jqtree-tree li.jqtree-se
 	    $("#category_confirm").on('click',function(){
 	            var name = $("#category_name").val();
 	            var node = $("#category").tree('getSelectedNode');
+                console.log(node);
 	            $("#category").tree(
 	                    'updateNode',
 	                    node,
 	                    {
 	                        label: name,
 	                        cat_name: name
-						}
+                        }
 	            );
 	            $('#editTreeForm').modal('hide');
 	        });

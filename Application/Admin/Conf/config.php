@@ -6,4 +6,6 @@ return array(
         'ADMINISTRATOR'=>array(1,4),
     ),
     'shop_url'=>'http://www.jsshop.com',
+    'ERROR_NO_PRIVILEGE'=>'您没有权限',
+    'SHOW_PAGE_TRACE'=>true,
 );

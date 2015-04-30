@@ -5,6 +5,7 @@
  * Date: 2015/4/16
  * Time: 10:07
  */
+namespace Home\Controller;
 
 class LoginController extends CommonController
 {
@@ -22,93 +23,106 @@ class LoginController extends CommonController
     //登录处理
     public function loginHandle()
     {
-        $data["user_name"]  = I('post.user_name',null);
-        $data["password"] = I('post.password',null,'md5');
+        $data["user_name"]  = I('request.user_name',null);
+        $data["password"] = I('request.password',null,'md5');
+
+        $returnUrl = I('request.returnUrl',null);
+
         $u = D('User');
 
-        if(!$u->create($data))
+        if(empty($data['user_name']))
         {
-            $this->error($u->getError());
+            $this->ajaxReturn(array('empty_username'=>1,'message'=>'用户名密码不能为空'));
+        }
+        if(empty($data['password']))
+        {
+            $this->ajaxReturn(array('empty_password'=>1,'message'=>'用户名密码不能为空'));
         }
 
-        $user = $u->checkLogin($data);
+        $count = $u->where($data)->count();
 
-        if(!is_null($user))
+        if($count)
         {
-            cookie('user_name', $data['user_name'], C('KEEP_COOKIE_TIME'));
-            Cookie::set('user_id', $info['id'], 60*60*24);
-            Cookie::set('feifa_home', 'passageway_home', 60*60*24);
-            Cookie::set('cart_num', $info['cart_num'], 60*60*24);
-
-            if(Cookie::get('user_name'))
-            {
-                $this->assign('jumpUrl', U('Myapp://index/index'));
-                $this->assign('waitSecond', 3);
-                $this->success(C('SUCCESS_LOGIN_SUCCESS'));
+            $info = $u->where($data)->select();
+            $user_id = $info[0]['user_id'];
+            session('user_id',$user_id);
+            $u->where(array('user_id'=>$user_id))->setField(array('last_login'=>time()));
+            if(empty($returnUrl)){
+                $returnUrl = U('Index/index');
             }
-            else
-            {
-                $this->error(C('ERROR_LOGIN_FAILURE'));
-            }
+            $this->ajaxReturn(array('status'=>1,'message'=>'登陆成功','url'=>$returnUrl));
         }
         else
         {
-            $this->error(C('ERROR_ACCOUNT_OR_PASSWORD_ERROR'));
+            $this->ajaxReturn(array('error_user_name_password'=>1,'message'=>'用户名密码错误！'));
         }
 
     }
 
 
     //忘记密码页面
-    function forget_password()
+    function forgetPassword()
     {
-        $this->display('forget_pass');
+        $this->display('forget_password');
     }
 
     //忘记密码处理
-    function forget_password_handle()
+    public function forgetpasswordHandle()
     {
-        $username = trim($_POST['username']);
-        if(!preg_match('/^[a-zA-Z0-9_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]+$/', $username))
-        {
-            $this->error('输入的用户名非法');
-        }
-
-        $email = trim($_POST['email']);
+        Vendor('phpMailer.class#phpmailer');
+        Vendor('phpMailer.class#smtp');
+        $email = I('post.email',null);
         if(!preg_match('/^\w+([-+.]\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/', $email))
         {
             $this->error('邮箱非法');
         }
 
-        $condition['username'] = array('eq', $this->zaddslashes($username));
-        $condition['email'] = array('eq', $this->zaddslashes($email));
-        $condition['_logic'] = 'and';
-        $result = $this->loginModel->forgetPassword($condition);
+        $u = D('User');
+
+        $result = $u->getInfoByEmail($email);
 
         if(!empty($result))
         {
-            $email = $condition['email'];
-            $title = 'Kshop数码密码更改邮件 ！';
+            $user_id = $result['user_id'];
+            $rand_string = $this->getRandChar(8);
+            $u->where(array('user_id'=>$user_id))->setField('password',md5($rand_string));
+            $title = '密码更改邮件 ！';
             $content = '<div>';
-            $content .= sprintf('Dear %s，您忘记密码了吗？<br>', $result['info']['username']);
+            $content .= sprintf('Dear %s，您忘记密码了吗？<br>', $result['user_name']);
             $content .= '为了保险起见，我们将您的密码更新成新密码，看到新密码后，您可以立即登陆会员中心修改密码。<br>';
-            $content .= sprintf('您的个人信息请妥善保管个人注册信息<br>用户名：%s<br>新密码：%s<br>', $result['info']['username'], $result['new_pass']);
+            $content .= sprintf('您的个人信息请妥善保管个人注册信息<br>用户名：%s<br>新密码：%s<br>', $result['user_name'], $rand_string);
             $content .= '■重要信息：由于此邮件包含个人注册资料，请妥善保存!</div>';
 
-            $email = $this->SendMail($email, $title, $content);
-            if(isset($email))
+            $mail = new \PHPMailer(); //new一个PHPMailer对象出来
+            $mail->CharSet = "UTF8";//设定邮件编码，默认ISO-8859-1，如果发中文此项必须设置，否则乱码
+            $mail->IsSMTP(); // 设定使用SMTP服务
+            //$mail->SMTPDebug  = 1;                     // 启用SMTP调试功能
+            // 1 = errors and messages
+            // 2 = messages only
+            $mail->SMTPAuth = true;                  // 启用 SMTP 验证功能
+            $mail->SMTPSecure = "ssl";                 // 安全协议，可以注释掉
+            $mail->Host = C('MAIL_SMTP');      // SMTP 服务器
+            $mail->Port = C('MAIL_PORT');                    // SMTP服务器的端口号
+            $mail->Username = C('MAIL_LOGINNAME');   // SMTP服务器用户名
+            $mail->Password = C('MAIL_PASSWORD');             // SMTP服务器密码
+            $mail->SetFrom(C('MAIL_ADDRESS'), C('MAIL_NICKNAME'));
+            $mail->AddReplyTo(C('MAIL_ADDRESS'), C('MAIL_NICKNAME'));
+            $mail->Subject = '忘记密码';
+            $mail->AltBody = '请换用兼容的邮件查看器阅读'; // optional, comment out and test
+            $mail->MsgHTML($content);
+            $mail->AddAddress($email);
+            if($mail->Send())
             {
-                $this->assign('waitSecond', 3);
-                $this->success(C('SUCCESS_PASSWORD_SEND_EMAIL'));
+                $this->success('已经发送邮件！');
             }
             else
             {
-                $this->error(C('ERROR_PASSWORD_FAILURE'));
+                $this->error('发送邮件失败！');
             }
         }
         else
         {
-            $this->error(C('ERROR_ACCOUNT_OR_EMAIL_ERROR'));
+            $this->error(C('ERROR_EMAIL'));
         }
 
     }
@@ -121,7 +135,5 @@ class LoginController extends CommonController
         cookie('user_id',null);
         $this->redirect('Index');
     }
-
-    //
 
 }

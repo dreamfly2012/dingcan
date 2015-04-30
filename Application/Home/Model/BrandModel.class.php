@@ -11,6 +11,11 @@ namespace Home\Model;
 use Think\Model;
 
 class BrandModel extends Model{
+    public function getAllBrand(){
+        $info = $this->select();
+        return $info;
+    }
+
     public function getBrandInfo($store_id){
         $brandsInfo = $this->where(array('store_id'=>$store_id))->select();
         return $brandsInfo;

@@ -39,7 +39,9 @@
                 <li><a href="<?php echo U('Address/addressList');?>">地址管理</a></li>
                 <li><a href="<?php echo U('Comment/commentList');?>">评论管理</a></li>
                 <li><a href="<?php echo U('Member/memberList');?>">会员管理</a></li>
+                <li><a href="<?php echo U('Coupon/index');?>">兑换券管理</a></li>
                 <li><a href="<?php echo U('Store/storeBasicSetting');?>">商店设置</a></li>
+                <li><a href="<?php echo U('Store/showGoodsIndex');?>">主页面商品显示设置</a></li>
                
             </ul>
             <ul class="nav navbar-nav navbar-right">

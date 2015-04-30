@@ -12,13 +12,19 @@ class UserModel extends CommonModel
 {
     protected $_validate = array(
         array('user_name','require','用户名不能为空'),
-        array('user_name', '/^[a-zA-Z0-9_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]+$/' , '用户名格式错误' , 1 , 'regex' ,1),
+        //array('user_name', '/^[a-zA-Z0-9_\x7f-\xff][a-zA-Z0-9_\x7f-\xff]+$/' , '用户名格式错误' , 1 , 'regex' ,1),
         array('password','require','密码不能为空'),
     );
 
     public function  __construct()
     {
         parent::__construct();
+    }
+
+    public function getPaypoints($user_id)
+    {
+        $result = $this->field('pay_points')->where(array('user_id'=>$user_id))->select();
+        return $result[0]['pay_points'];
     }
 
     public function getInfoByUserId($user_id)
@@ -33,5 +39,10 @@ class UserModel extends CommonModel
         return $result[0];
     }
 
+    public function getInfoByEmail($email)
+    {
+        $result = $this->where(array('email'=>$email))->select();
+        return $result[0];
+    }
 
 }
