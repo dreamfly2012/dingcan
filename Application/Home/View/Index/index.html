@@ -1,37 +1,154 @@
-<include file="Public/header" title="{$store_config.store_title}" description="{$store_config.store_desc}"/>
-<div class="header wthrough" style="background: none;">
-    <include file="Public/nav_header" />
-    <include file="Public/index_scroll" />
-</div>
-<div class="w1200 m0auto">
-    <div class="span6 mt5">
-        <img class="lazy height270" src="/Public/Home/images/grey.gif" data-original="/Public/Home/images/banner-design-onsale.jpg" width="100%" />
-    </div>
-    <div class="span6 mt5">
-        <img class="lazy height270" src="/Public/Home/images/grey.gif" data-original="/Public/Home/images/banner-freeshipping.jpg" width="100%" />
-    </div>
-    <foreach name="goods_list" item="goods" key="k">
-    <div class="span3 pt15">
-        <div class="text-center" >
-            <a href="{:U('Goods/goodsDetail',array('goods_id'=>$goods['goods_id']))}">
-                <img class="index-img lazy" src="/Public/Home/images/grey.gif" data-original="/Uploads/{$goods.goods_img}"  alt="{$goods.goods_name}"/>
-            </a>
-            <div class="goods-footer">
-                <p class="text-center">
-                <a href="javascript:;" class="add_to_cart" data-goods-id="{$goods.goods_id}">
-                <span class="icon-shopping-cart icon-white"></span>
-                添加到购物车
-                </a>
-                <a href="javascript:;" class="add_to_favourite" data-goods-id="{$goods.goods_id}">
-                <span class="icon-heart icon-white"></span>
-                添加到收藏
-                </a>
-                </p>
-                <p class="text-center"><a href="{:U('Goods/goodsDetail',array('goods_id'=>$goods['goods_id']))}">{$goods.goods_name}</a></p>
-                <p class="text-center"><span class="product-price">{$goods.goods_price}</span></p>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <link href="http://cdn.bootcss.com/bootstrap/2.3.2/css/bootstrap.min.css" rel="stylesheet">
+        <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+        <script src="http://cdn.bootcss.com/bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <LINK rel="stylesheet" type="text/css" href="__PUBLIC__/Home/css/lottery.css">
+        
+        <SCRIPT type="text/javascript" src="__PUBLIC__/Home/js/awardRotate.js"></SCRIPT>
+        <SCRIPT type="text/javascript">
+                var __RANDOM_INIT__="{:U('Index/randomInit')}";
+                var __GETUV_URL__ = "{:U('Index/getUV')}";
+                var __GETDETAIL_URL__  = "{:U('Index/getDetail')}";
+                function setCookie(c_name,value,expiredays){
+                    var exdate=new Date()
+                    exdate.setDate(exdate.getDate()+expiredays)
+                    document.cookie=c_name+ "=" +escape(value)+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+                }
+
+                function getCookie(c_name){
+                    if (document.cookie.length>0){
+                        c_start=document.cookie.indexOf(c_name + "=");
+                        if (c_start!=-1){ 
+                            c_start=c_start + c_name.length+1;
+                            c_end=document.cookie.indexOf(";",c_start);
+                            if (c_end==-1) c_end=document.cookie.length
+                            return unescape(document.cookie.substring(c_start,c_end))
+                        } 
+                    }
+                    return ""
+                }
+                if(!getCookie('uv')){
+                    uv=$.ajax({url:__GETUV_URL__,async:false});
+                    setCookie('uv',uv.responseText,1);
+                }
+                $(function () {
+                    var rotateTimeOut = function () {
+                        $('#rotate').rotate({
+                            angle: 0,
+                            animateTo: 2160,
+                            duration: 8000,
+                            callback: function () {
+                                alert('网络超时，请检查您的网络设置！');
+                            }
+                        });
+                    };
+                    var bRotate = false;
+                    var rotateFn = function (awards, angles, txt) {
+                        bRotate = !bRotate;
+                        $('#rotate').stopRotate();
+                        $('#rotate').rotate({
+                            angle: 0,
+                            animateTo: angles + 1800,
+                            duration: 10000,
+                            callback: function () {
+                                alert(txt);
+                                bRotate = !bRotate;
+                            }
+                        })
+                    };
+                    $('#get_detail').click(function(){
+                        $.ajax({
+                            url:__GETDETAIL_URL__,
+                            async:true,
+                            dataType:'json',
+                            success: function(data){
+                                html = '<table style="border:1px solid;padding-top:30px;"><tr><td>用户名</td><td>订餐名</td></tr>';
+                                for(var i=0;i<data.length;i++){
+                                    html = html + '<tr><td>'+data[i].user_name+'</td><td>'+data[i].awards_title+'</td></tr>';
+                                }
+
+                                html = html +'</table>';
+
+                                $("#day_detail").html();
+                                $("#day_detail").html(html);
+                
+                            }
+                        });
+                    });
+
+                    $('.pointer').click(function () {
+                        if (bRotate)return;
+                        var datainfo = '';
+                        $.ajax({
+                            url:__RANDOM_INIT__,
+                            async:true,
+                            dataType:'json',
+                            success: function(data){
+                               
+                                if(data.islogin==0){
+                                    $('#loginform').modal('show')
+                                    return;
+                                }
+
+                                if(data.count>0){
+                                    alert('你今天已经点击过');
+                                    return;
+                                }
+                                
+                                var angle = 360/data.num;
+                                angle = data.prize*angle;
+                                rotateFn(data.prize,angle,data.message);
+                            }
+                        });
+                    
+                    });
+                });
+        </SCRIPT>
+        <title>订餐</title>
+    </head>
+    <body>
+        <div style="background-color: #CCC; ">
+            <div style="width:1000px;height:1000px;float:left">
+                <DIV class="turntable-bg">
+                    <DIV class="pointer">
+                        <IMG alt="pointer" src="__PUBLIC__/Home/images/pointer.png">
+                    </DIV>
+                    <DIV class="rotate">
+                        <IMG id="rotate" alt="turntable" src="__PUBLIC__/Home/images/turntable2.png">
+                    </DIV>
+                </DIV>
             </div>
+            <div style=" float:left;margin-top: 100px;margin-left: 200px;">
+                <button id="get_detail">获取当点订单详情</button>
+                <div id="day_detail">
+                    
+                </div>
+            </div>
+           
         </div>
-    </div>
-    </foreach>
-</div>
-<include file="Public/footer" />
+        </div>
+        
+        <div id="loginform" class="modal hide fade">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h3>帐号登录</h3>
+            </div>
+            <form action="{:U('Login/loginHandle')}" method="post" class="form-horizontal">
+                <div class="modal-body">
+                    <div class="control-group">
+                        <label class="control-label" for="inputEmail">用户名</label>
+                        <div class="controls">
+                            <input type="text" id="inputEmail" name="user_name" placeholder="用户名">
+                        </div>
+                        <div class="controls">
+                            <input type="submit" id="login" value="登陆">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

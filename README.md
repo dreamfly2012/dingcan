@@ -89,6 +89,9 @@ js_comment 表 id_value => goods_id 添加列is_show default 1  finished
 ip定位 finished 2/3
 
 幸运大转盘 finidsed
+记录抽奖记录 添加js_lottery_log 记录表
+
+
 
 注册手机验证（数据库保存手机密码）us199需要代码修改
 短信接口：
@@ -103,4 +106,6 @@ TODO:限时抢购
 
 
 TODO:秒杀实现原理
+
+
 

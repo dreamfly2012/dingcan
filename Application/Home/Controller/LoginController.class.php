@@ -6,8 +6,8 @@
  * Time: 10:07
  */
 namespace Home\Controller;
-
-class LoginController extends CommonController
+use Think\Controller;
+class LoginController extends Controller
 {
     public function __construct()
     {
@@ -24,37 +24,22 @@ class LoginController extends CommonController
     public function loginHandle()
     {
         $data["user_name"]  = I('request.user_name',null);
-        $data["password"] = I('request.password',null,'md5');
-
-        $returnUrl = I('request.returnUrl',null);
-
-        $u = D('User');
+       
+        $u = M('User');
 
         if(empty($data['user_name']))
         {
-            $this->ajaxReturn(array('empty_username'=>1,'message'=>'用户名密码不能为空'));
+            $this->error('用户名不能为空');
         }
-        if(empty($data['password']))
-        {
-            $this->ajaxReturn(array('empty_password'=>1,'message'=>'用户名密码不能为空'));
-        }
+        $uid = cookie('uv');
 
-        $count = $u->where($data)->count();
+        $result = $u->add(array('uid'=>$uid,'user_name'=>$data["user_name"]));
 
-        if($count)
-        {
-            $info = $u->where($data)->select();
-            $user_id = $info[0]['user_id'];
-            session('user_id',$user_id);
-            $u->where(array('user_id'=>$user_id))->setField(array('last_login'=>time()));
-            if(empty($returnUrl)){
-                $returnUrl = U('Index/index');
-            }
-            $this->ajaxReturn(array('status'=>1,'message'=>'登陆成功','url'=>$returnUrl));
-        }
-        else
-        {
-            $this->ajaxReturn(array('error_user_name_password'=>1,'message'=>'用户名密码错误！'));
+        session('user_id',$result);
+        if($result){
+            $this->success('登陆成功',U('Index/index'));
+        } else {
+            $this->error('登陆失败');
         }
 
     }
